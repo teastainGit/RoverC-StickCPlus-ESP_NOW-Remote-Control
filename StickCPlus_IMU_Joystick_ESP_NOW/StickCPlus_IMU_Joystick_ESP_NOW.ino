@@ -1,5 +1,4 @@
-//usbserial-75522271F6
-//MAC: 94:b9:7e:8c:7c:e8
+//MAC: 94:b9:7e:8c:7c:e8 My StickCPlus for the 'Wand'
 //as Joy
 #include <M5StickCPlus.h>
 #include <esp_now.h>
@@ -11,7 +10,7 @@ float accZ = 0.0F;
 
 //Address of OTHER unit
 
-uint8_t broadcastAddress[] = { 0x94, 0xB9, 0x7E, 0x8C, 0xB9, 0x7C };
+uint8_t broadcastAddress[] = { 0x94, 0xB9, 0x7E, 0x8C, 0xB9, 0x7C };  //MAC of the 'Receiver' RoverC
 
 String success;
 
