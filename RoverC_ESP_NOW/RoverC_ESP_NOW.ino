@@ -48,9 +48,8 @@ void setup() {
     Serial.println("Failed to add peer");
     return;
   }
-
-  esp_now_register_recv_cb(OnDataRecv);
-
+  
+  esp_now_register_recv_cb(esp_now_recv_cb_t(OnDataRecv));
   M5.Axp.ScreenBreath(15);
   M5.Lcd.setRotation(0);
   M5.Lcd.fillScreen(BLACK);
